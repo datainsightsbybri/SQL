@@ -30,10 +30,10 @@ VALUES
 
 #For this project, I used SQL to query the Superstore database to get information about items sold at the store and their prices.
 
-#orders the items by price
-SELECT (item_name), price
+#Use a SELECT statement to order the items by price.
+SELECT item_name, price
 FROM superstore
-ORDER BY price;
+ORDER BY price desc;
 
 #maximum price 
 SELECT max(price)
@@ -45,7 +45,11 @@ FROM superstore
 WHERE category="Appliances";
 
 #Show a statistic about the item prices.
-SELECT min(average_rating)
+SELECT min(price)
+FROM superstore;
+
+#Show a statistic about the average rating.
+SELECT max(average_rating)
 FROM superstore;
 
 #list of all items in order by average rating ascending
@@ -58,3 +62,14 @@ SELECT avg(price)
 FROM superstore
 WHERE category="Kitchen Supplies"
 
+#How can this answer business problems or help a business out.
+Example: By ordering items by price, the business can identify high-value products 
+and adjust pricing strategies accordingly. Understanding the average prices of items in different 
+categories, such as "Appliances" and "Kitchen Supplies," can help in setting competitive pricing.
+
+Additionally, analyzing the average ratings of items can help in understanding customer preferences and 
+identifying popular products that can be promoted further.
+
+Presenting these findings in a comprehensive report using Tableau or Power BI, along with visualizations 
+generated from SQL queries, can provide stakeholders with clear, actionable insights to improve sales strategies, 
+optimize inventory management, and enhance overall customer satisfaction.
