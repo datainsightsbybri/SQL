@@ -24,3 +24,33 @@ VALUES
     (13, 'Slow Cooker', 'Appliances', 49.95, 30, 4.7),
     (14, 'Cutlery Set', 'Kitchen Supplies', 34.50, 40, 4.4),
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
+
+
+-- orders the items by price
+
+SELECT (item_name), price
+FROM superstore
+ORDER BY price;
+
+-- maximum price 
+
+SELECT MAX(price)
+FROM superstore;
+
+-- average price in the appliances category
+
+SELECT AVG(price)
+FROM superstore
+WHERE category="Appliances";
+
+-- minimum rating 
+
+SELECT MIN(average_rating)
+FROM superstore;
+
+-- list of all items in order by average rating ascending
+
+SELECT *
+FROM superstore
+ORDER BY average_rating;
+
