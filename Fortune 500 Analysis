@@ -97,3 +97,26 @@ SELECT company_name, min(revenue)
 FROM fortune_companies
 WHERE industry = 'Retail'
 ;
+
+
+I can use these queries to help a business in various ways. In my maternity leave analysis, I categorized 
+companies in the Healthcare industry based on their maternity leave policies, so we can identify which companies 
+are more family-friendly. This analysis can be used by healthcare professionals or organizations focusing on women's 
+health to advocate for better policies. 
+
+By completing industry revenue analysis, I identified industries with an average revenue of at least $200 billion 
+which provides valuable insights for investors, policymakers, or businesses looking to enter or expand within these 
+industries. Knowing which company in the Retail industry has the most revenue can be useful for competitive analysis 
+and strategic decision-making. Also, understanding which company in the Retail industry has the least revenue can help 
+in assessing market competition and potential areas for improvement.
+
+Furthermore, in my analysis I identified companies that offer both healthcare benefits and at least 20 paid time off 
+days can be valuable, showing benefits and paid time off analysis for job seekers looking for comprehensive benefits 
+packages. This analysis can help businesses understand how their benefits compare to competitors and make necessary 
+adjustments to remain competitive.
+
+I can create a bar chart showing the average revenue of industries with revenues over $200 billion, or a pie chart 
+showing the distribution of companies in the Healthcare industry based on their maternity leave policies. These 
+visualizations can then be included in a report along with explanations and recommendations based on the analysis. 
+The visualizations highlight the key insights, making it easier for stakeholders to understand and interpret the data. 
+
