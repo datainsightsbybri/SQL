@@ -1,7 +1,7 @@
 > [!TIP]
 > Read this first.
 
-# Brianna Berbick's SQL Portfolio
+# Brianna's SQL Portfolio
 ## Welcome to my SQL Portfolio! This code repository contains examples of SQL I've written. Feel free to take a look and reach out if you have any questions.
 
 *In this repository, you'll find a collection of SQL projects that showcase my skills and experience in working with databases. Each project demonstrates my ability to extract, manipulate, and analyze data to derive meaningful insights and make informed decisions.*
