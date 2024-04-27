@@ -98,7 +98,7 @@ FROM fortune_companies
 WHERE industry = 'Retail'
 ;
 
-
+#How can this answer business problems or help a business out.
 I can use these queries to help a business in various ways. In my maternity leave analysis, I categorized 
 companies in the Healthcare industry based on their maternity leave policies, so we can identify which companies 
 are more family-friendly. This analysis can be used by healthcare professionals or organizations focusing on women's 
