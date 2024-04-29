@@ -1,0 +1,49 @@
+SELECT people.show_id
+,people.director
+,titles.title
+,titles.type
+FROM "netflix_people" people
+LEFT JOIN "netflix_titles_info" titles
+ON people.show_id= titles.show_id;
+
+--How many movie titles are there in the database? (movies only, not tv shows) 
+SELECT COUNT(*) 
+FROM "netflix_titles_info"
+WHERE "type"='Movie';
+
+--Select the list of titles of both movies and shows in order by the most recent year released
+SELECT "title", "release_year","type"
+FROM "netflix_titles_info"
+ORDER BY "release_year" desc;
+
+--When was the most recent batch of tv shows and/or movies added to the database? 
+SELECT MAX(date(date_added)) 
+FROM "netflix_titles_info";
+
+--List all the movies and tv shows in alphabetical order.
+SELECT title
+FROM "netflix_titles_info"
+ORDER BY "title" asc;
+
+--Who was the Director for the movie The Starling?
+SELECT director
+FROM "netflix_people"
+LEFT JOIN "netflix_titles_info"
+ON netflix_people.show_id= netflix_titles_info.show_id
+WHERE title='The Starling';
+
+--What is the oldest movie in the database and what year was it made?
+SELECT title, release_year
+FROM netflix_titles_info 
+WHERE "type"='Movie'
+ORDER BY release_year asc
+LIMIT 1;
+
+
+--The SQL queries presented provide a comprehensive view of the Netflix dataset, offering valuable insights that can 
+significantly impact business operations and drive strategic decisions for a streaming service like Netflix. For instance, by sorting 
+titles by release year, they can identify trends and patterns, informing future content creation strategies. Additionally, 
+understanding the count of movie titles versus TV shows can aid in content planning and licensing decisions. 
+
+Visualizing these insights through interactive charts and lists can provide a comprehensive view of the content library, 
+enhancing user experience and enabling data-driven decisions that optimize content offerings and marketing efforts.
