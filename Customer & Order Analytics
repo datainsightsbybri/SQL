@@ -10,7 +10,7 @@ SELECT *
 FROM BIT_DB.customers LIMIT 3;
 
 #1 How many orders were placed in January? 
-SELECT COUNT(OrderID) 
+SELECT COUNT(orderid) 
 FROM BIT_DB.JanSales
 WHERE length(orderid) = 6 
 AND orderid <> 'Order ID';
@@ -56,3 +56,10 @@ ON feb.orderID=cust.order_id
 WHERE Feb.Quantity>2 
 AND length(orderid) = 6 
 AND orderid <> 'Order ID';
+
+#8 List all the products sold in Los Angeles in February, and include how many of each were sold. 
+
+SELECT Product, SUM(quantity)
+FROM BIT_DB.FebSales
+WHERE location like '%Los Angeles%'
+GROUP BY Product;
